@@ -1,0 +1,3978 @@
+{
+	"info": {
+		"_postman_id": "c6192cce-18b6-4e14-a6b4-6d912ad0c8f5",
+		"name": "REST-ACMECollege",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25009773"
+	},
+	"item": [
+		{
+			"name": "Student Club",
+			"item": [
+				{
+					"name": "GET All Student Clubs",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Student Clubs (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Student Clubs (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Student Club By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Student Club By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Student Club By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Student Club",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student-club\": \"academic-student-club\",\r\n    \"name\": \"Python Programming Club\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Student Club (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student-club\": \"academic-student-club\",\r\n    \"name\": \"Python Programming Club\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Student Club (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student-club\": \"non-academic-student-club\",\r\n    \"name\": \"Swimming Club\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Membership By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"durationAndStatus\": {\r\n        \"startDate\": \"2023-11-24T22:01:50\",\r\n        \"endDate\": \"2023-11-26T22:01:50\",\r\n        \"active\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Membership By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"durationAndStatus\": {\r\n        \"startDate\": \"2023-11-24T22:01:50\",\r\n        \"endDate\": \"2023-11-26T22:01:50\",\r\n        \"active\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Membership By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"durationAndStatus\": {\r\n        \"startDate\": \"2023-11-24T22:01:50\",\r\n        \"endDate\": \"2023-11-26T22:01:50\",\r\n        \"active\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Student Club By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student-club\": \"non-academic-student-club\",\n    \"name\": \"Basketball Club\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Student Club By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student-club\": \"non-academic-student-club\",\n    \"name\": \"Basketball Club\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Student Club By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student-club\": \"non-academic-student-club\",\n    \"name\": \"Socker Club\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Student Club By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Student Club By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Student Club By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/studentclub/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"studentclub",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "GET All Students",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Students (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Students (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Student By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Student By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Student By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations By Student ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Student",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Michael\",\r\n    \"lastName\": \"Jordan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Student (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Michael\",\r\n    \"lastName\": \"Jordan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Student (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Michael\",\r\n    \"lastName\": \"Jordan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Student's Course Professor By IDs",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Avigail\",\r\n    \"lastName\": \"Lee\",\r\n    \"department\": \"Tourism\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1/course/2/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1",
+								"course",
+								"2",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Student's Course Professor By IDs (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Avigail\",\r\n    \"lastName\": \"Lee\",\r\n    \"department\": \"Tourism\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1/course/2/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1",
+								"course",
+								"2",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Student's Course Professor By IDs (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Avigail\",\r\n    \"lastName\": \"Lee\",\r\n    \"department\": \"Tourism\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/1/course/2/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"1",
+								"course",
+								"2",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Student By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Student By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Student By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/student/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"student",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Professor",
+			"item": [
+				{
+					"name": "GET All Professors",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Professors (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Professors (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Profesor By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Profesor By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Professor By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Professor",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Charles\",\r\n    \"lastName\": \"Xavier\",\r\n    \"department\": \"Physics\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Professor (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Charles\",\r\n    \"lastName\": \"Xavier\",\r\n    \"department\": \"Physics\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Professor (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Charles\",\r\n    \"lastName\": \"Xavier\",\r\n    \"department\": \"Physics\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Professor By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Professor By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Professor By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/professor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "GET All Courses",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Courses (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Courses (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Course By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Course By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Course By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations By Course ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Course",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseCode\": \"CST3300\",\r\n    \"courseTitle\": \"Web Programming\",\r\n    \"year\": 2024,\r\n    \"semester\": \"FALL\",\r\n    \"creditUnits\": 3,\r\n    \"online\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Course (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseCode\": \"CST3300\",\r\n    \"courseTitle\": \"Web Programming\",\r\n    \"year\": 2024,\r\n    \"semester\": \"FALL\",\r\n    \"creditUnits\": 3,\r\n    \"online\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Course (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseCode\": \"CST3300\",\r\n    \"courseTitle\": \"Web Programming\",\r\n    \"year\": 2024,\r\n    \"semester\": \"FALL\",\r\n    \"creditUnits\": 3,\r\n    \"online\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Course By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Course By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Course By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/course/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"course",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course Registration",
+			"item": [
+				{
+					"name": "GET All Course Registrations",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations By Student ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations By Course ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?course_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "course_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations By Student ID and Course ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1&course_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "course_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Course Registrations (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Course Registration By Student ID and Course ID or Professor ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numericGrade\": 96,\r\n    \"letterGrade\": \"A+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1&course_id=3&professor_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "course_id",
+									"value": "3"
+								},
+								{
+									"key": "professor_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Course Registration By Student ID and Course ID or Professor ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numericGrade\": 96,\r\n    \"letterGrade\": \"A+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1&course_id=3&professor_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "course_id",
+									"value": "3"
+								},
+								{
+									"key": "professor_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Course Registration By Student ID and Course ID or Professor ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numericGrade\": 96,\r\n    \"letterGrade\": \"A+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1&course_id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "course_id",
+									"value": "3"
+								},
+								{
+									"key": "professor_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Course Registration",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Course Registration By Student ID And Course ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1&course_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "course_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Course Registrations By Student ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?student_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Course Registrations By Course ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration?course_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							],
+							"query": [
+								{
+									"key": "course_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Course Registrations (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Course Registration (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/courseregistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"courseregistration"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Club Membership",
+			"item": [
+				{
+					"name": "GET All Club Memberships",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Club Memberships (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Club Memberships By Student ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership?club_id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							],
+							"query": [
+								{
+									"key": "club_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Club Memberships (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Club Membership By Club ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"durationAndStatus\": {\r\n        \"startDate\": \"2023-12-01T23:48:46\",\r\n        \"endDate\": \"2023-12-31T23:48:46\",\r\n        \"active\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership?club_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							],
+							"query": [
+								{
+									"key": "club_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Club Membership By Club ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"durationAndStatus\": {\r\n        \"startDate\": \"2023-12-01T23:48:46\",\r\n        \"endDate\": \"2023-12-31T23:48:46\",\r\n        \"active\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership?club_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							],
+							"query": [
+								{
+									"key": "club_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Club Membership By Club ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"durationAndStatus\": {\r\n        \"startDate\": \"2023-12-01T23:48:46\",\r\n        \"endDate\": \"2023-12-31T23:48:46\",\r\n        \"active\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership?club_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							],
+							"query": [
+								{
+									"key": "club_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Club Membership By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Club Membership By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Club Membership By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Club Memberships",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Club Memberships (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Club Memberships (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/clubmembership",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"clubmembership"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Membership Card",
+			"item": [
+				{
+					"name": "GET All Membership Cards",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Membership Cards (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Membership Cards (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Club Membership Card By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Club Membership Card By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Club Membership Card By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Club Membership Card By ID (invalid user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "han",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hank",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Club Membership By Club ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard?student_id=1&signed=1&membership_id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "signed",
+									"value": "1"
+								},
+								{
+									"key": "membership_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Club Membership By Club ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard?student_id=1&signed=1&membership_id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "signed",
+									"value": "1"
+								},
+								{
+									"key": "membership_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST New Club Membership By Club ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard?student_id=1&signed=1&membership_id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "1"
+								},
+								{
+									"key": "signed",
+									"value": "1"
+								},
+								{
+									"key": "membership_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Membership Cards",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Membership Cards (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Membership Cards (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Membership Card By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Membership Card By ID (admin)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Membership Card By ID (user)",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "8277",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cst8277",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rest-acmecollege/api/v1/membershipcard/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest-acmecollege",
+								"api",
+								"v1",
+								"membershipcard",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
